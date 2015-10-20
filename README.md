@@ -1,2 +1,2 @@
-# hbs-form-helpers
+# form-helpers
 A collection of Handlebars form helpers

@@ -1,5 +1,5 @@
 /*!
- * 	hbs-form-helpers 1.0.0
+ * 	form-helpers 1.0.0
  * 	Victor Bastos - victorwpbastos@gmail.com
  */
 (function webpackUniversalModuleDefinition(root, factory) {

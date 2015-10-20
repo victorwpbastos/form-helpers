@@ -1,24 +1,24 @@
 {
-    "name": "hbs-form-helpers",
+    "name": "form-helpers",
     "version": "1.0.0",
     "description": "A collection of Handlebars form helpers",
     "main": "index.js",
     "scripts": {
         "test": "webpack-dev-server src/index.js --inline --port 3000",
-        "build-normal": "webpack src/index.js hbs-form-helpers.js",
-        "build-min": "webpack -p src/index.js hbs-form-helpers.min.js",
+        "build-normal": "webpack src/index.js form-helpers.js",
+        "build-min": "webpack -p src/index.js form-helpers.min.js",
         "build": "npm run build-normal && npm run build-min"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/victorwpbastos/hbs-form-helpers.git"
+        "url": "git+https://github.com/victorwpbastos/form-helpers.git"
     },
     "author": "Victor Bastos - victorwpbastos@gmail.com",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/victorwpbastos/hbs-form-helpers/issues"
+        "url": "https://github.com/victorwpbastos/form-helpers/issues"
     },
-    "homepage": "https://github.com/victorwpbastos/hbs-form-helpers#readme",
+    "homepage": "https://github.com/victorwpbastos/form-helpers#readme",
     "devDependencies": {
         "jshint"             : "^2.8.0",
         "jshint-loader"      : "^0.8.3",
