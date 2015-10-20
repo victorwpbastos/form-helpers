@@ -1,3 +1,13 @@
+if(IS_TESTING) {
+    $ = window.$;
+    _ = window._;
+    Handlebars = window.Handlebars;
+} else {
+    var $ = require('jquery');
+    var _ = require('underscore');
+    var Handlebars = require('handlebars/runtime');
+}
+
 module.exports = function(attrs) {
     var params = attrs.hash;
     var element = $('<textarea class="form-control"/>');
