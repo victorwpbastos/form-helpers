@@ -1,6 +1,6 @@
 {
     "name": "form-helpers",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A collection of Handlebars form helpers",
     "main": "index.js",
     "scripts": {
