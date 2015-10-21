@@ -1,5 +1,5 @@
 /*!
- * 	form-helpers 1.0.1
+ * 	form-helpers 1.0.3
  * 	Victor Bastos - victorwpbastos@gmail.com
  */
 (function webpackUniversalModuleDefinition(root, factory) {
