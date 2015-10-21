@@ -4,7 +4,7 @@ var Handlebars = require('handlebars/runtime');
 
 module.exports = function(attrs) {
     var params = attrs.hash;
-    var element = $('<select class="form-control"/>');
+    var element = $('<select/>');
     var template = '{{element}}';
 
     if(params.name && !params.id) {
@@ -59,7 +59,7 @@ module.exports = function(attrs) {
         element.html(options);
     }
 
-    params.element = element.attr(_.omit(params, ['label', 'cols', 'wrapped']))[0].outerHTML;
+    params.element = element.attr(_.omit(params, ['label', 'cols', 'wrapped'])).addClass('form-control')[0].outerHTML;
     template = $(_.template(template)(params));
 
     return new Handlebars.SafeString(template[0].outerHTML);

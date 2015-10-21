@@ -34,7 +34,7 @@ module.exports = function(attrs) {
             }
         }
 
-        params.element = element.attr(_.omit(params, ['label', 'cols', 'wrapped']))[0].outerHTML;
+        params.element = element.attr(_.omit(params, ['label', 'cols', 'wrapped'])).addClass('form-control')[0].outerHTML;
         template = $(_.template(template)(params));
 
         return new Handlebars.SafeString(template[0].outerHTML);

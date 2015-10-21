@@ -1,5 +1,5 @@
 /*!
- * 	form-helpers 1.0.3
+ * 	form-helpers 1.0.4
  * 	Victor Bastos - victorwpbastos@gmail.com
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -123,7 +123,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	        }
 
-	        params.element = element.attr(_.omit(params, ['label', 'cols', 'wrapped']))[0].outerHTML;
+	        params.element = element.attr(_.omit(params, ['label', 'cols', 'wrapped'])).addClass('form-control')[0].outerHTML;
 	        template = $(_.template(template)(params));
 
 	        return new Handlebars.SafeString(template[0].outerHTML);
@@ -323,7 +323,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = function(attrs) {
 	    var params = attrs.hash;
-	    var element = $('<select class="form-control"/>');
+	    var element = $('<select/>');
 	    var template = '{{element}}';
 
 	    if(params.name && !params.id) {
@@ -378,7 +378,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        element.html(options);
 	    }
 
-	    params.element = element.attr(_.omit(params, ['label', 'cols', 'wrapped']))[0].outerHTML;
+	    params.element = element.attr(_.omit(params, ['label', 'cols', 'wrapped'])).addClass('form-control')[0].outerHTML;
 	    template = $(_.template(template)(params));
 
 	    return new Handlebars.SafeString(template[0].outerHTML);
@@ -394,7 +394,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = function(attrs) {
 	    var params = attrs.hash;
-	    var element = $('<textarea class="form-control"/>');
+	    var element = $('<textarea/>');
 	    var template = ['{{element}}'];
 
 	    if(params.name && !params.id) {
@@ -421,7 +421,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	    }
 
-	    params.element = element.attr(_.omit(params, ['label', 'cols', 'wrapped']))[0].outerHTML;
+	    params.element = element.attr(_.omit(params, ['label', 'cols', 'wrapped'])).addClass('form-control')[0].outerHTML;
 	    template = $(_.template(template)(params));
 
 	    return new Handlebars.SafeString(template[0].outerHTML);
