@@ -1,5 +1,5 @@
 /*!
- * 	form-helpers 1.0.4
+ * 	form-helpers 1.0.5
  * 	Victor Bastos - victorwpbastos@gmail.com
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 
 	        if(params.label) {
-	            template = '<label for="{{id}}">{{label}}</label>{{element}}';
+	            template = '<label for="{{id}}" class="control-label">{{label}}</label>{{element}}';
 	        }
 
 	        if(params.wrapped !== 'false') {
@@ -331,7 +331,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    if(params.label) {
-	        template = '<label for="{{id}}">{{label}}</label>{{element}}';
+	        template = '<label for="{{id}}" class="control-label">{{label}}</label>{{element}}';
 	    }
 
 	    if(params.wrapped !== 'false') {
@@ -402,7 +402,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    if(params.label) {
-	        template = '<label for="{{id}}">{{label}}</label>{{element}}';
+	        template = '<label for="{{id}}" class="control-label">{{label}}</label>{{element}}';
 	    }
 
 	    if(params.wrapped !== 'false') {

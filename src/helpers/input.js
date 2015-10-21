@@ -15,7 +15,7 @@ module.exports = function(attrs) {
         }
 
         if(params.label) {
-            template = '<label for="{{id}}">{{label}}</label>{{element}}';
+            template = '<label for="{{id}}" class="control-label">{{label}}</label>{{element}}';
         }
 
         if(params.wrapped !== 'false') {
