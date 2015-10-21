@@ -1,10 +1,10 @@
 {
     "name": "form-helpers",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A collection of Handlebars form helpers",
     "main": "index.js",
     "scripts": {
-        "test": "webpack-dev-server src/index.js --inline --port 3000",
+        "test": "webpack-dev-server example/main.js --inline --port 3000 --config example/webpack.config.js",
         "build-normal": "webpack src/index.js form-helpers.js",
         "build-min": "webpack -p src/index.js form-helpers.min.js",
         "build": "npm run build-normal && npm run build-min"

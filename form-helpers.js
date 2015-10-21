@@ -1,5 +1,5 @@
 /*!
- * 	form-helpers 1.0.0
+ * 	form-helpers 1.0.1
  * 	Victor Bastos - victorwpbastos@gmail.com
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -58,13 +58,8 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	if(false) {
-	    _ = window._;
-	    Handlebars = window.Handlebars;
-	} else {
-		var _ = __webpack_require__(1);
-	    var Handlebars = __webpack_require__(2);
-	}
+	var _ = __webpack_require__(1);
+	var Handlebars = __webpack_require__(2);
 
 	_.templateSettings = {
 	    interpolate: /\{\{(.+?)\}\}/g
@@ -92,15 +87,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	if(false) {
-	    $ = window.$;
-	    _ = window._;
-	    Handlebars = window.Handlebars;
-	} else {
-	    var $ = __webpack_require__(4);
-	    var _ = __webpack_require__(1);
-	    var Handlebars = __webpack_require__(2);
-	}
+	var $ = __webpack_require__(4);
+	var _ = __webpack_require__(1);
+	var Handlebars = __webpack_require__(2);
 
 	module.exports = function(attrs) {
 	    if(attrs.hash.type === 'checkbox' || attrs.hash.type === 'radio') {
@@ -181,15 +170,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
-	if(false) {
-	    $ = window.$;
-	    _ = window._;
-	    Handlebars = window.Handlebars;
-	} else {
-	    var $ = __webpack_require__(4);
-	    var _ = __webpack_require__(1);
-	    var Handlebars = __webpack_require__(2);
-	}
+	var $ = __webpack_require__(4);
+	var _ = __webpack_require__(1);
+	var Handlebars = __webpack_require__(2);
 
 	module.exports = function(attrs) {
 	    var params = attrs.hash;
@@ -247,11 +230,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
-	if(false) {
-	    _ = window._;
-	} else {
-	    var _ = __webpack_require__(1);
-	}
+	var _ = __webpack_require__(1);
 
 	module.exports = function(obj, path) {
 	    var hasIndex = /\d/.test(path);
@@ -278,15 +257,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
-	if(false) {
-	    $ = window.$;
-	    _ = window._;
-	    Handlebars = window.Handlebars;
-	} else {
-	    var $ = __webpack_require__(4);
-	    var _ = __webpack_require__(1);
-	    var Handlebars = __webpack_require__(2);
-	}
+	var $ = __webpack_require__(4);
+	var _ = __webpack_require__(1);
+	var Handlebars = __webpack_require__(2);
 
 	module.exports = function(attrs) {
 	    var params = attrs.hash;
@@ -344,15 +317,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
-	if(false) {
-	    $ = window.$;
-	    _ = window._;
-	    Handlebars = window.Handlebars;
-	} else {
-	    var $ = __webpack_require__(4);
-	    var _ = __webpack_require__(1);
-	    var Handlebars = __webpack_require__(2);
-	}
+	var $ = __webpack_require__(4);
+	var _ = __webpack_require__(1);
+	var Handlebars = __webpack_require__(2);
 
 	module.exports = function(attrs) {
 	    var params = attrs.hash;
@@ -421,15 +388,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
-	if(false) {
-	    $ = window.$;
-	    _ = window._;
-	    Handlebars = window.Handlebars;
-	} else {
-	    var $ = __webpack_require__(4);
-	    var _ = __webpack_require__(1);
-	    var Handlebars = __webpack_require__(2);
-	}
+	var $ = __webpack_require__(4);
+	var _ = __webpack_require__(1);
+	var Handlebars = __webpack_require__(2);
 
 	module.exports = function(attrs) {
 	    var params = attrs.hash;

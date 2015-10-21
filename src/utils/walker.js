@@ -1,8 +1,4 @@
-if(IS_TESTING) {
-    _ = window._;
-} else {
-    var _ = require('underscore');
-}
+var _ = require('underscore');
 
 module.exports = function(obj, path) {
     var hasIndex = /\d/.test(path);

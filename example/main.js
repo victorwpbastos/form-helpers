@@ -1,3 +1,7 @@
+require('../src/index');
+
+var $ = require('jquery');
+var Handlebars = require('handlebars/runtime');
 var data = {
     name: 'Chunda Love',
     gender: 'M',

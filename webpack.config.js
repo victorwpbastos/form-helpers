@@ -1,6 +1,5 @@
 var webpack = require('webpack');
 var pkg = require('./package.json');
-var IS_TESTING = process.argv.slice(2).indexOf('--inline') !== -1;
 
 module.exports = {
     output: {
@@ -21,12 +20,9 @@ module.exports = {
         failOnHint: true
     },
     plugins: [
-        new webpack.DefinePlugin({
-            IS_TESTING: IS_TESTING
-        }),
         new webpack.BannerPlugin([
             '\t' + pkg.name + ' ' + pkg.version,
             '\t' + pkg.author
         ].join('\n'), {entryOnly: true})
     ]
-}
+};

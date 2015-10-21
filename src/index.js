@@ -1,10 +1,5 @@
-if(IS_TESTING) {
-    _ = window._;
-    Handlebars = window.Handlebars;
-} else {
-	var _ = require('underscore');
-    var Handlebars = require('handlebars/runtime');
-}
+var _ = require('underscore');
+var Handlebars = require('handlebars/runtime');
 
 _.templateSettings = {
     interpolate: /\{\{(.+?)\}\}/g
